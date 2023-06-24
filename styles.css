@@ -1,0 +1,169 @@
+/* Reset default browser styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 4px;
+}
+
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 2.5;
+    background-color: #f5f5f5;
+    color: #333;
+    font-size: 20px;
+}
+
+header {
+    font-family: 'Permanent Marker', cursive;
+    line-height: 2.6;
+    background-color: #f5f5f5;
+    color: #333;
+    text-align: center;
+}
+
+header,
+footer {
+    padding: 9px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+}
+
+h1,
+h2,
+h3 {
+    margin-bottom: 10px;
+}
+
+main {
+    padding: 30px;
+}
+
+form {
+    display: grid;
+    gap: 50px;
+}
+
+button {
+    padding: 20px 80px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+ul {
+    list-style-type: none;
+}
+
+/* Specific section styles */
+#flight-search input[type="date"],
+#flight-search input[type="time"] {
+    padding: 5px;
+}
+
+/* Add animation to sections */
+section {
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+section:hover {
+    transform: scale(1.05);
+}
+
+
+#flight-booking input[type="text"] {
+    padding: 5px;
+}
+
+#my-booking ul li {
+    margin-bottom: 15px;
+}
+
+
+#logout {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    line-height: 0.09;
+    height: 16vh;
+    /* Decreased height to 80vh */
+}
+
+.logout-button {
+    margin-top: 43px;
+}
+
+
+/* Responsive styles */
+@media (max-width: 768px) {
+
+    header,
+    footer {
+        text-align: center;
+    }
+}
+
+/* Additional styling */
+
+/* Add images to specific sections */
+#flight-search {
+    background-image: url("https://media.cntraveler.com/photos/63cac962a20dd5b7d9e22c46/16:9/w_2560%2Cc_limit/Airplane%2520night%2520sky%2520moon%2520_%2520marvin-van-beek-z3faD7yMRwg-unsplash.jpg");
+    background-size: cover;
+    color: #fff;
+    padding: 150px;
+    text-align: center;
+}
+
+#flight-booking {
+    background-image: url("https://media.cntraveler.com/photos/63cac962a20dd5b7d9e22c46/16:9/w_2560%2Cc_limit/Airplane%2520night%2520sky%2520moon%2520_%2520marvin-van-beek-z3faD7yMRwg-unsplash.jpg");
+    background-size: cover;
+    color: #fff;
+    padding: 150px;
+    text-align: center;
+}
+
+#my-booking {
+    background-image: url("https://media.cntraveler.com/photos/63cac962a20dd5b7d9e22c46/16:9/w_2560%2Cc_limit/Airplane%2520night%2520sky%2520moon%2520_%2520marvin-van-beek-z3faD7yMRwg-unsplash.jpg");
+    background-size: cover;
+    color: #fff;
+    padding: 155px;
+    text-align: center;
+}
+
+
+#login {
+    background-image: url("https://media.cntraveler.com/photos/63cac962a20dd5b7d9e22c46/16:9/w_2560%2Cc_limit/Airplane%2520night%2520sky%2520moon%2520_%2520marvin-van-beek-z3faD7yMRwg-unsplash.jpg");
+    background-size: cover;
+    color: #fff;
+    padding: 150px;
+    text-align: center;
+}
+
+#signup {
+    background-image: url("https://media.cntraveler.com/photos/63cac962a20dd5b7d9e22c46/16:9/w_2560%2Cc_limit/Airplane%2520night%2520sky%2520moon%2520_%2520marvin-van-beek-z3faD7yMRwg-unsplash.jpg");
+    background-size: cover;
+    color: #fff;
+    padding: 100px;
+    text-align: center;
+}
+
+#logout {
+    background-image: url("https://media.cntraveler.com/photos/63cac962a20dd5b7d9e22c46/16:9/w_2560%2Cc_limit/Airplane%2520night%2520sky%2520moon%2520_%2520marvin-van-beek-z3faD7yMRwg-unsplash.jpg");
+    background-size: cover;
+    color: #fff;
+    padding: 317px;
+    text-align: center;
+    font-family: 'Permanent Marker', cursive;
+}
