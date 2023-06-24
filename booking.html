@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flight Ticket Booking</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+
+<body>
+    <header>
+        <h1>Ready for Takeoff? Book Your Tickets Now!</h1>
+    </header>
+
+    <main>
+        <!-- Login -->
+        <section id="login">
+            <h2>Welcome back! Please login</h2>
+            <form action="/login" method="POST">
+                <input type="email" name="email" placeholder="Email" style="width: 1150px; height: 40px;" required>
+                <input type="password" name="password" placeholder="Password" style="width: 1150px; height: 40px;" required>
+                <button type="submit">Login</button>
+            </form>
+        </section>
+
+        <!-- Sign Up -->
+        <section id="signup">
+            <h2>Join us today! Signup now </h2>
+            <form action="/signup" method="POST">
+                <input type="text" name="name" placeholder="Name" style="width: 1150px; height: 40px;" required>
+                <input type="email" name="email" placeholder="Email" style="width: 1150px; height: 40px;" required>
+                <input type="password" name="password" placeholder="Password" style="width: 1150px; height: 40px;" required>
+                <button type="submit">Sign Up</button>
+            </form>
+        </section>
+
+        <!-- Flight Search -->
+        <section id="flight-search">
+            <h2>Search Flights</h2>
+            <form action="/search" method="POST">
+                <input type="date" name="date" style="width: 1150px; height: 40px;" required>
+                <input type="time" name="time" style="width: 1150px; height: 40px;" required>
+                <button type="submit">Search</button>
+            </form>
+        </section>
+
+        <!-- Flight Booking -->
+        <section id="flight-booking">
+            <h2>Flight Booking</h2>
+            <form action="/booking" method="POST">
+                <input type="text" name="flight_number" placeholder="Flight Number" style="width: 1150px; height: 40px;" required>
+                <input type="text" name="seat_number" placeholder="Seat Number" style="width: 1150px; height: 40px;" required>
+                <button type="submit">Book Now</button>
+            </form>
+        </section>
+
+        <!-- My Booking -->
+        <section id="my-booking">
+            <h2>My Booking</h2>
+            <ul>
+                <!-- List out the bookings made by the user -->
+                <li>Booking 1</li>
+                <li>Booking 2</li>
+                <li>Booking 3</li>
+            </ul>
+        </section>
+
+
+        <!-- Logout -->
+        <section id="logout">
+            <h2>Happy flying!!<h2>
+                    <h2>Thanks for stopping by!</h2>
+                    <div class="logout-button">
+                        <button>Logout</button>
+                    </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Flight Ticket Booking. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
